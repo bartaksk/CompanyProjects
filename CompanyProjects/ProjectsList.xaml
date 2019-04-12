@@ -1,12 +1,12 @@
-﻿<Window x:Class="CompanyProjects.ProjectsWindow"
+﻿<Window x:Class="CompanyProjects.ProjectsList"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CompanyProjects"
         mc:Ignorable="d"
-        Title="ProjectsWindow" Height="500" Width="600">
-    
+        Title="ProjectsList" Height="500" Width="600">
+
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition />
@@ -30,17 +30,14 @@
         </Grid.RowDefinitions>
 
         <!-- Number buttons -->
-        <Button x:Name="btnZoznamProjektov" Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="2" FontSize="20">
-            <TextBlock TextWrapping="Wrap">Zoznam projektov</TextBlock>
-        </Button>
-        <Button x:Name="btnNovyProjekt"  Grid.Row="5" Grid.Column="4" Grid.ColumnSpan="2" FontSize="20">Nový projekt</Button>
-        <Button x:Name="btnEditProjekt"  Grid.Row="7" Grid.Column="1" Grid.ColumnSpan="2" FontSize="20">Editácia projektu</Button>
-        <Button x:Name="btnZmazProjekt"  Grid.Row="7" Grid.Column="4" Grid.ColumnSpan="2" FontSize="20">Zmazanie projektu</Button>
+        <Button x:Name="btnBackToMenu"  Grid.Row="7" Grid.Column="2" Grid.ColumnSpan="3" FontSize="28">Menu</Button>
 
-        <!-- Display list box-->
-        <ListBox x:Name="lboxZoznamProjektov" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="5" Grid.RowSpan="3"></ListBox>
+        <!-- Display text box-->
+        <TextBox x:Name="txtNickName" TextAlignment="Left" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="5" Grid.RowSpan="5" FontSize="28" AcceptsReturn="True" VerticalScrollBarVisibility="Auto" TextWrapping="Wrap" />
+
 
         <!-- Display labels-->
-        <Label x:Name="lblNickName"></Label>
+
     </Grid>
+
 </Window>

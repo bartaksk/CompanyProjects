@@ -15,16 +15,13 @@ using System.Windows.Shapes;
 namespace CompanyProjects
 {
     /// <summary>
-    /// Interaction logic for ProjectsWindow.xaml
+    /// Interaction logic for ProjectsList.xaml
     /// </summary>
-    public partial class ProjectsWindow : Window
+    public partial class ProjectsList : Window
     {
-        public ProjectsWindow()
+        public ProjectsList()
         {
             InitializeComponent();
-
-            //Fullfill lboxZoznamProjektov with list of projects
-            lboxZoznamProjektov.Items.Add("xxx");
         }
     }
 }
