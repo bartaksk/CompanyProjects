@@ -8,9 +8,14 @@ namespace CompanyProjects
 {
     class SQLDataHandler : IDataHandler
     {
-        public string ReadProject()
+        public string ReadNameAndPass()
         {
             return "";
+        }
+
+        public bool ReadPass()
+        {
+            return false;
         }
 
         public void SaveProject()

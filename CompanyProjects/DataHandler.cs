@@ -8,7 +8,9 @@ namespace CompanyProjects
 {
     interface IDataHandler
     {
-        string ReadProject();
+        string ReadNameAndPass();
+
+        bool ReadPass();
 
         void SaveProject();
 

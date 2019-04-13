@@ -29,12 +29,12 @@
         </Grid.RowDefinitions>
 
         <!-- Number buttons -->
-        <Button x:Name="btn7"  Grid.Row="7" Grid.Column="1" Grid.ColumnSpan="2" FontSize="28">Sign In</Button>
-        <Button x:Name="btn8"  Grid.Row="7" Grid.Column="4" Grid.ColumnSpan="2" FontSize="20">Go to Registration</Button>
+        <Button x:Name="btnSignIn"  Grid.Row="7" Grid.Column="1" Grid.ColumnSpan="2" FontSize="28" Click="btnSignIn_Click">Sign In</Button>
+        <Button x:Name="btnGotoRegistration"  Grid.Row="7" Grid.Column="4" Grid.ColumnSpan="2" FontSize="20" Click="btnGotoRegistration_Click">Go to Registration</Button>
 
         <!-- Display text box-->
-        <TextBox x:Name="txtNickName" TextAlignment="Left" Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="5" Grid.RowSpan="1" FontSize="28">Name</TextBox>
-        <TextBox x:Name="txtPasswordA" TextAlignment="Left" Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="5" Grid.RowSpan="1" FontSize="28">Password</TextBox>
+        <TextBox x:Name="txtNickName" TextAlignment="Left" Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="5" Grid.RowSpan="1" FontSize="28" GotFocus="txtNickName_GotFocus">Name</TextBox>
+        <TextBox x:Name="txtPasswordA" TextAlignment="Left" Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="5" Grid.RowSpan="1" FontSize="28" GotFocus="txtPasswordA_GotFocus">Password</TextBox>
         
         
         <!-- Display labels-->
