@@ -77,12 +77,11 @@ namespace CompanyProjects
             }
             else
             {
-                //Ak je heslo rovnake ako to zo suboru, tak prepnut okno na ProjectsWindow
-                MessageBox.Show("All OK");
-            }
-
-            //Ak meno nie je v subore, tak vyhodit upozornenie, ze meno neexistuje
-            //Ak meno je v subore, ale heslo nesedi, tak vyhodit upozornenie, ze heslo nie je spravne
+                //Ak je heslo rovnake ako to zo suboru, tak prepnut okno na ProjectsWindow                
+                ProjectsWindow projectsWindow = new ProjectsWindow();
+                projectsWindow.Show();
+                this.Close();
+            }            
         }
     }
 }

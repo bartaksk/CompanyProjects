@@ -94,7 +94,7 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="CryptoProvider.cs" />
-    <Compile Include="DataHandler.cs" />
+    <Compile Include="IDataHandler.cs" />
     <Compile Include="ProjectsWindow.xaml.cs">
       <DependentUpon>ProjectsWindow.xaml</DependentUpon>
     </Compile>

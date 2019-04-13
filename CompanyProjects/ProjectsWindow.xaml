@@ -30,12 +30,12 @@
         </Grid.RowDefinitions>
 
         <!-- Number buttons -->
-        <Button x:Name="btnZoznamProjektov" Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="2" FontSize="20">
+        <Button x:Name="btnZoznamProjektov" Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="2" FontSize="20" Click="btnZoznamProjektov_Click">
             <TextBlock TextWrapping="Wrap">Zoznam projektov</TextBlock>
         </Button>
-        <Button x:Name="btnNovyProjekt"  Grid.Row="5" Grid.Column="4" Grid.ColumnSpan="2" FontSize="20">Nový projekt</Button>
-        <Button x:Name="btnEditProjekt"  Grid.Row="7" Grid.Column="1" Grid.ColumnSpan="2" FontSize="20">Editácia projektu</Button>
-        <Button x:Name="btnZmazProjekt"  Grid.Row="7" Grid.Column="4" Grid.ColumnSpan="2" FontSize="20">Zmazanie projektu</Button>
+        <Button x:Name="btnNovyProjekt"  Grid.Row="5" Grid.Column="4" Grid.ColumnSpan="2" FontSize="20" Click="btnNovyProjekt_Click">Nový projekt</Button>
+        <Button x:Name="btnEditProjekt"  Grid.Row="7" Grid.Column="1" Grid.ColumnSpan="2" FontSize="20" Click="btnEditProjekt_Click">Editácia projektu</Button>
+        <Button x:Name="btnZmazProjekt"  Grid.Row="7" Grid.Column="4" Grid.ColumnSpan="2" FontSize="20" Click="btnZmazProjekt_Click">Zmazanie projektu</Button>
 
         <!-- Display list box-->
         <ListBox x:Name="lboxZoznamProjektov" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="5" Grid.RowSpan="3"></ListBox>

@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.Xml;
 
 namespace CompanyProjects
 {
@@ -19,9 +20,38 @@ namespace CompanyProjects
     /// </summary>
     public partial class ProjectsList : Window
     {
+        string pathToXmlFile;
+
         public ProjectsList()
         {
             InitializeComponent();
+            pathToXmlFile = "../../projects.xml";
+            FillTextBox();
+        }
+
+        private void FillTextBox()
+        {
+            txtDetailedProjectsList.Clear();
+            XmlDocument xmldoc = new XmlDocument();
+            xmldoc.Load(pathToXmlFile);
+            XmlNodeList nodes = xmldoc.SelectNodes("projects/project/name");
+            foreach (XmlNode node in nodes)
+            {
+                txtDetailedProjectsList.AppendText(node.InnerText);
+                txtDetailedProjectsList.AppendText("\r\n");                
+                txtDetailedProjectsList.AppendText(node.NextSibling.InnerText);
+                txtDetailedProjectsList.AppendText("\r\n");
+                txtDetailedProjectsList.AppendText(node.NextSibling.NextSibling.InnerText);
+                txtDetailedProjectsList.AppendText("\r\n");
+                txtDetailedProjectsList.AppendText("\r\n");
+            }
+        }
+
+        private void btnBackToMenu_Click(object sender, RoutedEventArgs e)
+        {
+            ProjectsWindow projectsWindow = new ProjectsWindow();
+            projectsWindow.Show();
+            this.Close();
         }
     }
 }

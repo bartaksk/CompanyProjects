@@ -10,13 +10,13 @@ namespace CompanyProjects
     {
         string ReadNameAndPass();
 
-        bool ReadPass();
+        bool Read();
 
         void SaveProject();
 
         void EditProject();
 
-        void DeleteProject();
+        void DeleteElement();
         
             
         

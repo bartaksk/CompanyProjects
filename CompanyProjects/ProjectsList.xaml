@@ -30,10 +30,10 @@
         </Grid.RowDefinitions>
 
         <!-- Number buttons -->
-        <Button x:Name="btnBackToMenu"  Grid.Row="7" Grid.Column="2" Grid.ColumnSpan="3" FontSize="28">Menu</Button>
+        <Button x:Name="btnBackToMenu"  Grid.Row="7" Grid.Column="2" Grid.ColumnSpan="3" FontSize="28" Click="btnBackToMenu_Click">Menu</Button>
 
         <!-- Display text box-->
-        <TextBox x:Name="txtNickName" TextAlignment="Left" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="5" Grid.RowSpan="5" FontSize="28" AcceptsReturn="True" VerticalScrollBarVisibility="Auto" TextWrapping="Wrap" />
+        <TextBox x:Name="txtDetailedProjectsList" TextAlignment="Left" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="5" Grid.RowSpan="5" FontSize="20" AcceptsReturn="True" VerticalScrollBarVisibility="Auto" TextWrapping="Wrap" />
 
 
         <!-- Display labels-->

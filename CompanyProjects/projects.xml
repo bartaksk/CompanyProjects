@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="windows-1250" ?>
+<?xml version="1.0" encoding="windows-1250"?>
 <projects>
   <project id="prj1">
     <name>Informačný systém firmy ABC</name>
@@ -26,4 +26,3 @@
     <customer>Delvita, a. s.</customer>
   </project>
 </projects>
-

@@ -11,8 +11,16 @@ namespace CompanyProjects
     {
         private XmlNodeList localNodes;
         private XmlNodeList localPassNodes;
-        private String localInsertedName;
-        private String localInsertedPass;
+        private string localInsertedName;
+        private string localInsertedPass;
+        private string localPathToXmlFile;
+        private string selectedItem;
+
+        public XmlDataHandler(string pathToXmlFile, string selectedItem)
+        {
+            localPathToXmlFile = pathToXmlFile;
+            this.selectedItem = selectedItem;
+        }
 
         public XmlDataHandler(XmlNodeList nodes, String insertedName, XmlNodeList passNodes, String insertedPass)
         {
@@ -46,7 +54,7 @@ namespace CompanyProjects
             return nameFound + passFound;
         }
 
-        public bool ReadPass()
+        public bool Read()
         {
             bool passFound = false;
 
@@ -70,9 +78,22 @@ namespace CompanyProjects
 
         }
 
-        public void DeleteProject()
+        public void DeleteElement()
         {
+            XmlDocument xmldoc = new XmlDocument();
+            xmldoc.Load(localPathToXmlFile);
+            XmlNodeList nodes = xmldoc.SelectNodes("projects/project/name");
 
+            //Vymazat cely node z Xml suboru podla vybraneho projektu v listBoxe
+            
+            foreach (XmlNode node in nodes)
+            {
+                if (node.InnerText.Equals(selectedItem))
+                {                    
+                    node.ParentNode.RemoveAll();
+                }
+            }
+            xmldoc.Save(localPathToXmlFile);            
         }
     }
 }

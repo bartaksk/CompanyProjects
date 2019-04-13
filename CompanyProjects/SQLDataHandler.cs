@@ -13,7 +13,7 @@ namespace CompanyProjects
             return "";
         }
 
-        public bool ReadPass()
+        public bool Read()
         {
             return false;
         }
@@ -28,7 +28,7 @@ namespace CompanyProjects
 
         }
 
-        public void DeleteProject()
+        public void DeleteElement()
         {
 
         }
