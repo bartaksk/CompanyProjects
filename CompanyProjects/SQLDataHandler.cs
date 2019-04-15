@@ -18,7 +18,7 @@ namespace CompanyProjects
             return false;
         }
 
-        public void SaveProject()
+        public void AddToProject()
         {
 
         }

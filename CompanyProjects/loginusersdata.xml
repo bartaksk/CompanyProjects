@@ -1,11 +1,15 @@
-<?xml version="1.0" encoding="windows-1250" ?>
+<?xml version="1.0" encoding="windows-1250"?>
 <users>
-  <user id="usr1">
+  <user>
     <name>adam</name>
     <pass>123456</pass>
   </user>
-  <user id="usr2">
+  <user>
     <name>host2</name>
-    <pass>Import-ISIS</pass>    
+    <pass>Import-ISIS</pass>
+  </user>
+  <user>
+    <name>Name</name>
+    <pass>Password</pass>
   </user>
 </users>

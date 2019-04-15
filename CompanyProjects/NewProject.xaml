@@ -30,12 +30,12 @@
         </Grid.RowDefinitions>
 
         <!-- Number buttons -->
-        <Button x:Name="btnNewProject"  Grid.Row="7" Grid.Column="2" Grid.ColumnSpan="3" FontSize="28">Create New Project</Button>
+        <Button x:Name="btnNewProject"  Grid.Row="7" Grid.Column="2" Grid.ColumnSpan="3" FontSize="28" Click="btnNewProject_Click">Create New Project</Button>
 
         <!-- Display text box-->
-        <TextBox x:Name="txtNickName" TextAlignment="Left" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="5" Grid.RowSpan="1" FontSize="28">Name</TextBox>
-        <TextBox x:Name="txtAbbreviation" TextAlignment="Left" Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="5" Grid.RowSpan="1" FontSize="28">Abbreviation</TextBox>
-        <TextBox x:Name="txtCustomer" TextAlignment="Left" Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="5" Grid.RowSpan="1" FontSize="28">Customer</TextBox>
+        <TextBox x:Name="txtNickName" TextAlignment="Left" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="5" Grid.RowSpan="1" FontSize="28" GotFocus="txtNickName_GotFocus">Name</TextBox>
+        <TextBox x:Name="txtAbbreviation" TextAlignment="Left" Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="5" Grid.RowSpan="1" FontSize="28" GotFocus="txtAbbreviation_GotFocus">Abbreviation</TextBox>
+        <TextBox x:Name="txtCustomer" TextAlignment="Left" Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="5" Grid.RowSpan="1" FontSize="28" GotFocus="txtCustomer_GotFocus">Customer</TextBox>
 
         <!-- Display labels-->
         

@@ -12,7 +12,7 @@ namespace CompanyProjects
 
         bool Read();
 
-        void SaveProject();
+        void AddToProject();
 
         void EditProject();
 
